@@ -1,0 +1,61 @@
+@use "../../mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  @include mixins.maxWidth();
+
+  .title {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+
+    h1 {
+      font-family: "Architects Daughter", cursive;
+      font-size: 2.1rem;
+      color: var(--color-btn);
+      margin-bottom: 1rem;
+
+      @media screen and (max-width: 440px) {
+        font-size: max(6vw, 1.5rem);
+      }
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: whitesmoke;
+      @media screen and (max-width: 550px) {
+        font-size: max(5vw, 1.2rem);
+      }
+    }
+  }
+
+  .cards {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+
+    @media screen and (max-width: 860px) {
+      gap: 0;
+      margin: 5rem 2rem;
+    }
+
+    @media screen and (max-width: 440px) {
+      flex-direction: column;
+    }
+
+    .row1,
+    .row2 {
+      display: flex;
+      gap: 2rem;
+
+      @media screen and (max-width: 860px) {
+        flex-direction: column;
+      }
+    }
+  }
+}

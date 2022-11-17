@@ -1,0 +1,35 @@
+@use "../../mixins";
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0.8rem;
+
+  .iconContainer {
+    width: max-content;
+    line-height: 0;
+    padding: 1.3rem;
+    border-radius: 50%;
+    background: rgba(175, 175, 175, 0.45);
+
+    svg {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  h2 {
+    margin-top: 1rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    color: var(--color-text);
+    max-width: 300px;
+  }
+}
