@@ -5,6 +5,7 @@ import Facts from "./components/facts/facts.component";
 import Home from "./components/home/home.component";
 import SpecialDishes from "./components/special-dishes/special-dishes.component";
 import Specialities from "./components/specialities/specialities.component";
+import Reservation from "./components/reservation/reservation.component";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutUs />
       <Facts />
       <SpecialDishes />
+      <Reservation />
     </div>
   );
 }
