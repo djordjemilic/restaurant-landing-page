@@ -1,0 +1,28 @@
+@use "../../mixins";
+
+.dishesContainer {
+  margin: 1rem;
+  width: max-content;
+
+  .dishes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .name {
+      font-size: 1.5rem;
+      color: whitesmoke;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: var(--color-btn);
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--color-text);
+    width: max(25vw, 280px);
+  }
+}
