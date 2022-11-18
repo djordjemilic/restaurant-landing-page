@@ -9,7 +9,7 @@
     font-size: 2.4rem;
     color: var(--color-btn);
     cursor: pointer;
-    transform: color ease-in-out 300ms;
+    transition: color ease-in-out 300ms;
     &:hover {
       color: var(--color-text);
     }

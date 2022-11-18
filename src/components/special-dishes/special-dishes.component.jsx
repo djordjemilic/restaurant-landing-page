@@ -13,42 +13,47 @@ const SpecialDishes = () => {
       <div className={styles.dishes}>
         <div className={styles.col1}>
           <Dishes
-            name="Beef Burger"
-            price="32"
-            description="Classic greek salad, barrel aged feta"
+            name="HANGOVER BURGER"
+            price="23$"
+            description="Crispy hash browns, Applewood-smoked bacon, lettuce, tomatos, pickles"
           />
           <Dishes
-            name="Beef Burger"
-            price="32"
-            description="Classic greek salad, barrel aged feta"
+            name="LEMON CHICKEN"
+            price="19$"
+            description="Two lemon-pepper chicken breasts grilled to perfection"
           />
           <Dishes
-            name="Beef Burger"
-            price="32"
-            description="Classic greek salad, barrel aged feta"
+            name="GRILLED SALMON"
+            price="32$"
+            description="Lightly seasoned grilled salmon, served with a choice of two sides and a dinner roll"
           />
           <Dishes
-            name="Beef Burger"
-            price="32"
-            description="Classic greek salad, barrel aged feta"
+            name="SOURDOUGH PATTY MELT"
+            price="29$"
+            description="Tillamook cheddar, caramelized onions, special sauce"
           />
         </div>
 
         <div className={styles.col2}>
           <Dishes
-            name="Beef Burger"
-            price="32"
-            description="Classic greek salad, barrel aged feta"
+            name="CHICKEN QUESADILLA"
+            price="12$"
+            description="Grilled chicken, melted cheddar and peper jack chesses served with guacamole and sour cream"
           />
           <Dishes
-            name="Beef Burger"
-            price="32"
-            description="Classic greek salad, barrel aged feta"
+            name="THE TRIP DIP & CHIPS"
+            price="15$"
+            description="Queso, guacamole, salsa and tortilla chips"
           />
           <Dishes
-            name="Beef Burger"
-            price="32"
-            description="Classic greek salad, barrel aged feta"
+            name="CEASAR SALAD"
+            price="20$"
+            description="Romaine lettuce tossed in our delicious Ceasar dressing, tossed with Parmesan cheese and crunchy croutons"
+          />
+          <Dishes
+            name="NORTHWEST SALAD"
+            price="22$"
+            description="Toased bread with bleu cheese, candied pecans, grilled red onions, romaine lettuce and our raspberry balsamic vinaigrette"
           />
         </div>
       </div>

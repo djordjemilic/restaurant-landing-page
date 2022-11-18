@@ -12,16 +12,32 @@
     .name {
       font-size: 1.5rem;
       color: whitesmoke;
+
+      @media screen and (max-width: 440px) {
+        font-size: 1.2rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+      }
     }
 
     .price {
       font-size: 1.5rem;
       color: var(--color-btn);
+
+      @media screen and (max-width: 440px) {
+        font-size: 1.2rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+      }
     }
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--color-text);
     width: max(25vw, 280px);
   }

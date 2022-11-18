@@ -5,7 +5,7 @@
 }
 
 .inner {
-  margin-top: 5rem;
+  margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 400px;
@@ -112,9 +112,12 @@
           line-height: 0;
 
           img {
+            @media screen and (max-width: 700px) {
+              width: 100%;
+            }
             max-width: 800px;
             width: max(55vw, 360px);
-            height: 250px;
+            height: 300px;
           }
         }
       }

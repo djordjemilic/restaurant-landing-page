@@ -6,6 +6,7 @@ import Home from "./components/home/home.component";
 import SpecialDishes from "./components/special-dishes/special-dishes.component";
 import Specialities from "./components/specialities/specialities.component";
 import Reservation from "./components/reservation/reservation.component";
+import Footer from "./components/footer/footer.component";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Facts />
       <SpecialDishes />
       <Reservation />
+      <Footer />
     </div>
   );
 }

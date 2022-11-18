@@ -5,21 +5,49 @@
 * {
   margin: 0;
   padding: 0;
-  outline: none;
   border: none;
+  outline: none;
   list-style: none;
   text-decoration: none;
+  color: black;
   box-sizing: border-box;
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
+  //font-family: 'Architects Daughter', cursive;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--color-text);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-btn);
 }
 
 :root {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--color-text) var(--color-bg) !important;
   --color-bg: #2c2822;
   --color-btn: #dfae67;
   --color-text: #a9a7a5;
 }
 
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--color-bg);
   overflow-x: hidden;

@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.logoContainer}>
-        <span className={styles.logo}>Food</span>
+        <span className={styles.logo}>Foody</span>
       </div>
 
       <div className={styles.mobileBars} onClick={() => setNavOpen(true)}>
