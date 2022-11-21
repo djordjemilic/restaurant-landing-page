@@ -39,7 +39,7 @@ function Home() {
               to="menu"
               spy={true}
               smooth={true}
-              offset={-300}
+              offset={-200}
               duration={400}
             >
               See More

@@ -42,7 +42,7 @@ function Navbar() {
             className={styles.link}
             spy={true}
             smooth={true}
-            offset={-300}
+            offset={-150}
             duration={400}
           >
             About
@@ -54,7 +54,7 @@ function Navbar() {
             className={styles.link}
             spy={true}
             smooth={true}
-            offset={-300}
+            offset={-150}
             duration={400}
           >
             Menu
@@ -66,7 +66,7 @@ function Navbar() {
             className={styles.link}
             spy={true}
             smooth={true}
-            offset={-400}
+            offset={-150}
             duration={400}
           >
             Reservation
