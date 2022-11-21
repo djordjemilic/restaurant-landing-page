@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./home.module.scss";
 import Navbar from "../nav-bar/nav-bar.component";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-scroll";
 import eating from "../../assets/eating.jpg";
 
 function Home() {
   return (
-    <div className={styles.home}>
+    <div className={styles.home} id="/">
       {/*Navbar*/}
       <div className={styles.nav}>
         <Navbar />
@@ -24,10 +25,27 @@ function Home() {
       {/*Slogan*/}
       <div className={styles.slogan}>
         <h1>{`Feel The Authenthic & Original Taste From Us`}</h1>
-        <p>Lorem ipsum dolor, sit amet consecture adispicing elite soluta </p>
+        <p>
+          It is not about being noticed, it's about being remembered. Our
+          restaurants have the highest quality service and specific dedicated
+          meal courses prepared by the best international chiefs.
+        </p>
 
         <button className={styles.btn}>
-          <span>See more</span>
+          <span>
+            {" "}
+            <Link
+              className={styles.link}
+              to="menu"
+              spy={true}
+              smooth={true}
+              offset={-300}
+              duration={400}
+            >
+              See More
+            </Link>
+          </span>
+
           <BsArrowRight />
         </button>
       </div>

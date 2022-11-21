@@ -9,9 +9,7 @@ const Footer = () => {
       <nav className={styles.nav}>
         <div className={styles.logoContainer}>
           <span className={styles.logo}>Foody</span>
-          <span className={styles.copyright}>
-            © Copyright Food. All rights reserved
-          </span>
+          <span className={styles.copyright}>© Copyright Foody</span>
         </div>
 
         <ul>

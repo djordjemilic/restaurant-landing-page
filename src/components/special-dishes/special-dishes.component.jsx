@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Dishes from "../dishes/dishes.component";
 import styles from "./special-dishes.module.scss";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const SpecialDishes = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="menu">
       <div className={styles.title}>
-        <h1>Special Dishes</h1>
-        <h2>Best Recommendation Menu</h2>
+        <h1 data-aos="slide-left">Special Dishes</h1>
+        <h2 data-aos="slide-right">Best Recommendation Menu</h2>
       </div>
 
       <div className={styles.dishes}>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import styles from "./nav-bar.module.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -23,11 +24,54 @@ function Navbar() {
         <li className={styles.mobileFaTimes} onClick={() => setNavOpen(false)}>
           <FaTimes />
         </li>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Reservation</li>
-        <li>News</li>
-        <li>More</li>
+        <li>
+          <Link
+            className={styles.link}
+            to="/"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={400}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="about"
+            className={styles.link}
+            spy={true}
+            smooth={true}
+            offset={-300}
+            duration={400}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="menu"
+            className={styles.link}
+            spy={true}
+            smooth={true}
+            offset={-300}
+            duration={400}
+          >
+            Menu
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="reservation"
+            className={styles.link}
+            spy={true}
+            smooth={true}
+            offset={-400}
+            duration={400}
+          >
+            Reservation
+          </Link>
+        </li>
       </ul>
     </nav>
   );

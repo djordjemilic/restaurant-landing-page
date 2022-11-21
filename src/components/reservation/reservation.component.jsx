@@ -1,28 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./reservation.module.scss";
 import restaurant from "../../assets/restaurant.jpg";
 import { BsArrowRight } from "react-icons/bs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Reservation = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <div className={styles.container}>
-      <div className={styles.inner}>
-        <div className={styles.leftContainer}>
+    <div className={styles.container} id="reservation">
+      <div className={styles.inner} data-aos="slide-down">
+        <div className={styles.leftContainer} data-aos="zoom-in-right">
           <div className={styles.description}>
             <div className={styles.title}>
-              <h1>Reservation</h1>
-              <h2>Make a Romantic Athmosphere Here</h2>
+              <h1 data-aos="slide-right">Reservation</h1>
+              <h2 data-aos="slide-right">
+                Join Us at The Foody for an exquisite dining experience.
+              </h2>
             </div>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              consectetur laoreet nulla eget facilisis. Praesent venenatis
-              commodo nibh lacinia dapibus.{" "}
+            <p data-aos="slide-right">
+              We are providing the best contemporary Japanese and Mediterranean
+              culinary journey you can embark on.
             </p>
           </div>
         </div>
 
-        <div className={styles.rightContainer}>
+        <div className={styles.rightContainer} data-aos="zoom-in-left">
           <div className={styles.formContainer}>
             <form action="">
               <div className={styles.imgContainer}>

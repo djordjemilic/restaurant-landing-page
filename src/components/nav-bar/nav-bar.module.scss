@@ -47,13 +47,26 @@
     color: whitesmoke;
     cursor: pointer;
     transition: color ease-in-out 300ms;
-    &:hover {
-      color: var(--color-btn);
+
+    .link {
+      color: whitesmoke;
+
+      &:hover {
+        color: var(--color-btn);
+      }
     }
 
     @media screen and (max-width: 768px) {
       &:first-child {
         margin-top: 2rem;
+      }
+
+      .link {
+        color: #2c2822;
+
+        &:hover {
+          color: whitesmoke;
+        }
       }
       padding: 0.5rem 2rem;
     }
