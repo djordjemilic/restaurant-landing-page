@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const Dishes = ({ name, price, description }) => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1500, disable: "mobile" });
   }, []);
 
   return (

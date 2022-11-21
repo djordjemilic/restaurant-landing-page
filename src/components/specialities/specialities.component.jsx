@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 function Specialities() {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1500, disable: "mobile" });
   }, []);
 
   return (

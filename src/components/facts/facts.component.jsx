@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 function Facts() {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1500, disable: "mobile" });
   }, []);
 
   return (
